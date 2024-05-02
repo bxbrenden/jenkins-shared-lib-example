@@ -40,3 +40,17 @@ The `wildcard-non-matching` tag has a single `.groovy` file in `src/com/brendenh
 the file is `Foo.groovy`, and the class defined within is `Bar`.
 
 When `vars/common.groovy` does a wildcard import of `com.brendenhyde.*`, the `Bar` class does not get resolved, resulting in a crashed pipeline.
+
+### non-wildcard-non-matching ❌
+The `non-wildcard-non-matching` tag is similar to `wildcard-non-matching` but with an import that doesn't use the `*` character.
+
+Instead, the import in `vars/common.groovy` is done as follows:
+```groovy
+import com.brendenhyde.Foo
+```
+This will cause Jenkins to search the Groovy classpath and find the `Foo.groovy` file.
+Then, Jenkins sees that there is no `Foo` class in that file and that `Bar` is in there instead.
+This crashes the pipeline with the following error:
+```
+Compilation incomplete: expected to find the class com.brendenhyde.Foo in src/com/brendenhyde/Foo.groovy, but the file contains the classes: com.brendenhyde.Bar
+```
