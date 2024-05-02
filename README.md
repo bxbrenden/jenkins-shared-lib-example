@@ -37,7 +37,7 @@ The class `Bar` does not match the filename but should still theoretically be re
 Unfortunately, it doesn't work that way in practice, and the class `com.brendenhyde.Bar` fails to resolve, crashing the pipeline.
 
 ### wildcard ✅
-The `wildcard` tag shows what happens when two classes are defined in a single `.groovy` file where one of the classes matches the filename (just like the `two-in-one` tag), AND they are imported with a wildcard in `vars/common.groovy` by using `import com.brendenhyde.*` before using both `Foo` and `Bar`.
+The `wildcard` tag shows what happens when two classes are defined in a single `.groovy` file where one of the classes matches the filename (just like the `two-in-one` tag), but instead of any explicit imports, they are imported with a one-line wildcard in `vars/common.groovy` by using `import com.brendenhyde.*` before using both `Foo` and `Bar`.
 The result is successful!
 
 <img src="https://github.com/bxbrenden/jenkins-shared-lib-example/blob/main/images/wildcard.gif" width="512" height="256" alt="Animated gif of Charlie Kelly being a wildcard in Always Sunny">
