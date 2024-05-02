@@ -14,7 +14,8 @@ I tested all of these configurations on Jenkins version `2.452-jdk17`.
 
 ## Tags
 This repo makes use of different tags to demonstrate different configurations.
-You can do a git checkout of any tag by running `git checkout <TAG_NAME>`.
+You can switch to any tag by running `git checkout <TAG_NAME>`.
+After you've finished, you can do a `git checkout main` to return to the latest commit of the repo.
 
 ### baseline ✅
 The `baseline` tag points to the baseline commit where the library works with a single defined class, a single file in `vars` called `common.groovy`, and a single stage in the `Jenkinsfile` which calls the method `useFoo()` from `vars/common.groovy` to print `"Hello, World"`.
