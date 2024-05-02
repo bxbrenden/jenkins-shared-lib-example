@@ -1,3 +1,5 @@
 import com.brendenhyde.Foo
 
-Foo.hello()
+static void useFoo() {
+  Foo.hello()
+}
