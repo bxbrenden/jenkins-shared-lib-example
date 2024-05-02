@@ -14,6 +14,11 @@ I tested all of these configurations on Jenkins version `2.452-jdk17`.
 
 ## Tags
 This repo makes use of different tags to demonstrate different configurations.
+
+All tags marked with a ✅ have been successfully run on Jenkins and demonstrate various ways to structure your Jenkins shared library code.
+
+All tags marked with a ❌ have caused Jenkins pipelines to crash and demonstrate what _not_ to do.
+
 You can switch to any tag by running `git checkout <TAG_NAME>`.
 After you've finished, you can do a `git checkout main` to return to the latest commit of the repo.
 
