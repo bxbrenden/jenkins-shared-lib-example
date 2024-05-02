@@ -3,6 +3,8 @@
 ## Purpose
 To demonstrate the use of a Jenkins Shared library and how it resolves classes / imports.
 
+The structure of this repo's Jenkins Shared Library follows the [official Jenkins documentation](https://www.jenkins.io/doc/book/pipeline/shared-libraries/#directory-structure) for defining a shared library.
+
 ## Tags
 This repo makes use of different tags to demonstrate different configurations.
 You can do a git checkout of any tag by running `git checkout <TAG_NAME>`.
