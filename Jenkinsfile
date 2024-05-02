@@ -10,6 +10,8 @@ pipeline {
           echo hello
           def goodbye = common.useBar()
           echo goodbye
+          def hi = common.useBaz()
+          echo hi
         }
       }
     }

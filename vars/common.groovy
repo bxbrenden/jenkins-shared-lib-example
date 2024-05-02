@@ -7,3 +7,7 @@ String useFoo() {
 String useBar() {
   return Bar.goodbye()
 }
+
+String useBaz() {
+  return Baz.hello()
+}
