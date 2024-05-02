@@ -2,8 +2,9 @@ package com.brendenhyde
 
 class Foo {
 
-  static void hello() {
-    println 'Hello, World!'
+  String hello(String message = 'Hello, World') {
+    println message
+    return message
   }
 
 }

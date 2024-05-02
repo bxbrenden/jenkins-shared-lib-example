@@ -6,7 +6,8 @@ pipeline {
     stage('Test shared lib') {
       steps {
         script {
-          common.useFoo()
+          def output = common.useFoo()
+          echo output
         }
       }
     }
