@@ -5,7 +5,7 @@ This repo demonstrates the use of a Jenkins Shared library and how it resolves c
 
 This was an exercise in understanding which patterns result in unresolved classes vs. which ones successfully resolve.
 
-Although the wildcard approach described below seems to work in my testing, [this StackOverlflow discussion](https://stackoverflow.com/questions/29995165/multiple-groovy-classes-in-one-file-when-running-as-a-script/29996071#29996071) and [this Groovy bug report](https://issues.apache.org/jira/browse/GROOVY-3793) indicate that support for importing multiple classes from the same `.groovy` file is very limited, especially when you're not pre-compiling your classes to `.class` files with `groovyc`.
+Although the wildcard approach described below seems to work in my testing, [this StackOverflow discussion](https://stackoverflow.com/questions/29995165/multiple-groovy-classes-in-one-file-when-running-as-a-script/29996071#29996071) and [this Groovy bug report](https://issues.apache.org/jira/browse/GROOVY-3793) indicate that support for importing multiple classes from the same `.groovy` file is very limited, especially when you're not pre-compiling your classes to `.class` files with `groovyc`.
 
 The 3 main files in this repo are:
 1. `Jenkinsfile`is the main entrypoint where Jenkins starts running a Pipeline.
