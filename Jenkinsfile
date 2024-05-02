@@ -6,12 +6,8 @@ pipeline {
     stage('Test shared lib') {
       steps {
         script {
-          def hello = common.useFoo()
-          echo hello
           def goodbye = common.useBar()
           echo goodbye
-          def hi = common.useBaz()
-          echo hi
         }
       }
     }
