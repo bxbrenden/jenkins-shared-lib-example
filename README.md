@@ -34,3 +34,9 @@ The `wildcard-multi-matching` tag is the same as the `wildcard` tag but with two
 the first class file is still `Foo.groovy` and still contains the classes `Foo` and `Bar`, but we now have another file named `Baz.groovy` with a class called `Baz`.
 
 Using the wildcard still imports everything successfully with this config.
+
+### wildcard-non-matching ❌
+The `wildcard-non-matching` tag has a single `.groovy` file in `src/com/brendenhyde` whose file name doesn't match its class name;
+the file is `Foo.groovy`, and the class defined within is `Bar`.
+
+When `vars/common.groovy` does a wildcard import of `com.brendenhyde.*`, the `Bar` class does not get resolved, resulting in a crashed pipeline.
