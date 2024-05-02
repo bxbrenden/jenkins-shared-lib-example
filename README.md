@@ -8,7 +8,7 @@ This repo makes use of different tags to demonstrate different configurations.
 You can do a git checkout of any tag by running `git checkout <TAG_NAME>`.
 
 ### Baseline
-The `baseline` tag points to the baseline commit where the library works with a single defined class, a single file in vars, and a single stage in the `Jenkinsfile` which calls the method from `vars/common.groovy` to print `"Hello, World"`.
+The `baseline` tag points to the baseline commit where the library works with a single defined class, a single file in `vars` called `common.groovy`, and a single stage in the `Jenkinsfile` which calls the method `useFoo()` from `vars/common.groovy` to print `"Hello, World"`.
 
 ### Two-in-One
 The `two-in-one` tag shows what happens when two classes are defined in the same `.groovy` file where one of the classes matches the filename.
