@@ -1,5 +1,4 @@
-import com.brendenhyde.Foo
-import com.brendenhyde.Bar
+import com.brendenhyde.*
 
 String useFoo() {
   return Foo.hello()
