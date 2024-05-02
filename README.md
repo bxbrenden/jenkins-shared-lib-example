@@ -1,9 +1,16 @@
 # Jenkins Shared Lib. Example
 
 ## Purpose
-To demonstrate the use of a Jenkins Shared library and how it resolves classes / imports.
+This repo demonstrates the use of a Jenkins Shared library and how it resolves classes / imports.
+
+The 3 main files in this repo are:
+1. `Jenkinsfile`is the main entrypoint where Jenkins starts running a Pipeline.
+2. `vars/common.groovy` exposes functions from the shared lib. so they can be called from a stage in `Jenkinsfile`.
+3. `src/com/brendenhyde/Foo.groovy` is a shared library file where Groovy classes are defined.
 
 The structure of this repo's Jenkins Shared Library follows the [official Jenkins documentation](https://www.jenkins.io/doc/book/pipeline/shared-libraries/#directory-structure) for defining a shared library.
+
+I tested all of these configurations on Jenkins version `2.452-jdk17`.
 
 ## Tags
 This repo makes use of different tags to demonstrate different configurations.
