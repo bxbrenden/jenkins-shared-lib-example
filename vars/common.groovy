@@ -1,5 +1,5 @@
-import com.brendenhyde.*
+import com.brendenhyde.Foo
 
 String useBar() {
-  return Bar.goodbye()
+  return com.brendenhyde.Bar.goodbye()
 }
